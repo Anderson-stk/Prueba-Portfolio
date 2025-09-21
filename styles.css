@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-image: url("Imagenes/imagen.png"); /* Fondo principal */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff; /* Cambia el color del texto si es necesario */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+nav {
+    background: #333;
+    padding: 15px;
+    position: sticky; /* Menú fijo */
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+#presentacion {
+    display: flex;              
+    align-items: center;        
+    gap: 20px;                  
+    justify-content: flex-start; 
+    flex-wrap: wrap;            
+    background-color: rgba(255,255,255,0.9); 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: 20px auto;          
+}
+
+#presentacion img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#presentacion p {
+    flex: 1;                     
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.skills div {
+    text-align: center;
+    transition: transform 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+.skills div:hover {
+    transform: scale(1.2);
+    color: #ff9800;
+}
+
+.skills img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+#redes ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+#redes ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#redes ul li a:hover {
+    color: #ff9800;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    gap: 15px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #ff9800;
+}
+
+#btnArriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; 
+    background: #333;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+}
+
+#btnArriba:hover {
+    background: #ff9800;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skills {
+        gap: 20px;
+    }
+}
